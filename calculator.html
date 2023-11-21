@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        #main{
+            background-color:aqua;
+            margin-top: 100px;
+            margin: auto;
+            width: 25%;
+            height: 50%;
+            padding-left: 5px;
+           
+        }
+        #no1{
+            padding-top:5px;;
+        }
+        #button{
+            padding-bottom: 8px;
+            
+        }
+        .btn1{
+            margin: 8px;
+            width: 30px;
+            color: brown;
+        }
+         .btn1:hover{
+            background-color:greenyellow;
+            font-size:large;
+        }
+       
+       
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="no1">
+            <label for="txtNo1">NO1</label>
+                <input type="Number" id="txtNo1" placeholder="enter first number"><br><br>
+           
+        </div>
+        <div>
+            <label for="txtNo2">NO2</label>
+                <input type="Number" id="txtNo2" placeholder="enter second number"><br><br>
+           
+        </div>
+        <div id="result">
+            <label for="txtresult">result</label>
+                <input type="text" id="txtresult" placeholder="result"><br><br>
+           
+        </div>
+        <div id="button">
+            <input class="btn1" onclick="plus_Click()"  type="button" value="+">
+            <input  class="btn1"onclick="minus_Click()" type="button" value="-">
+            <input  class="btn1"onclick="mult_Click()"  type="button" value="*">
+            <input  class="btn1"onclick="div_Click()"   type="button" value="/">
+            <input  class="btn1"onclick="modulas_Click()" type="button" value="%">
+        </div>
+
+    </div>
+    
+   
+
+
+
+    <script src="cals.js" id=""></script>
+</body>
+</html>
